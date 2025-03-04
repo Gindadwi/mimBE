@@ -4,8 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js",
-    "postinstall": "npx sequelize-cli db:migrate"
+    "dev": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
