@@ -18,10 +18,3 @@ db.sequelize.sync().then(() => {
     console.log(`Server running on port ${PORT}`);
   });
 });
-
-// Middleware untuk menangani route yang tidak ditemukan
-app.use((req, res) => {
-  res.status(404).json({ message: "Route not found" });
-});
-
-module.exports = app;
