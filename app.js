@@ -9,7 +9,7 @@ app.use(express.json());
 const userRoutes = require("./routes/userRoutes");
 const sppRoutes = require("./routes/sppRoutes");
 
-app.use("/api/users", userRoutes);
-app.use("/api/spp", sppRoutes);
+app.use("/users", userRoutes);
+app.use("/spp", sppRoutes);
 
 module.exports = app;
