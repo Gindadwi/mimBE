@@ -9,7 +9,14 @@ app.use(express.json());
 const userRoutes = require("./routes/userRoutes");
 const sppRoutes = require("./routes/sppRoutes");
 
-app.use("/users", userRoutes);
-app.use("/spp", sppRoutes);
+app.use("/api/users", userRoutes);
+app.use("/api/spp", sppRoutes);
+
+const PORT = process.env.PORT || 3000;
+db.sequelize.sync().then(() => {
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
+});
 
 module.exports = app;
