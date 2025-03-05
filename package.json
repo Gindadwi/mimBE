@@ -1,7 +1,6 @@
 {
   "name": "back-end2",
   "version": "1.0.0",
-  "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "postinstall": "npx sequelize-cli db:migrate"
